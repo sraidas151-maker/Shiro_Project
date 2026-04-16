@@ -1,0 +1,362 @@
+<?php
+session_start();
+require_once 'db.php';
+
+// Enable error reporting for debugging
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
+// Redirect to login if not authenticated
+if (!isset($_SESSION['user_id'])) {
+    header("Location: login.php");
+    exit();
+}
+
+$message = '';
+$error = '';
+
+// Handle form submission
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+
+    $caption = trim($_POST['caption'] ?? '');
+    $location = trim($_POST['location'] ?? '');
+    $user_id = $_SESSION['user_id'];
+
+    // Validation
+    if (empty($caption)) {
+        $error = "Please write a caption";
+    } elseif (!isset($_FILES['image']) || $_FILES['image']['error'] != 0) {
+        $error = "Please select an image";
+    } else {
+        // Validate file type
+        $allowed_types = ['image/jpeg', 'image/png', 'image/gif', 'image/webp'];
+        $finfo = finfo_open(FILEINFO_MIME_TYPE);
+        $mime_type = finfo_file($finfo, $_FILES['image']['tmp_name']);
+        finfo_close($finfo);
+
+        if (!in_array($mime_type, $allowed_types)) {
+            $error = "Invalid file type. Only JPG, PNG, GIF, WEBP allowed.";
+        } elseif ($_FILES['image']['size'] > 10 * 1024 * 1024) {
+            $error = "File too large. Max 10MB allowed.";
+        } else {
+            // File upload
+            $target_dir = "uploads/";
+            if (!is_dir($target_dir)) {
+                mkdir($target_dir, 0777, true);
+            }
+
+            $file_extension = pathinfo($_FILES["image"]["name"], PATHINFO_EXTENSION);
+            $file_name = time() . "_" . uniqid() . "." . strtolower($file_extension);
+            $target_file = $target_dir . $file_name;
+
+            // Move uploaded file
+            if (move_uploaded_file($_FILES["image"]["tmp_name"], $target_file)) {
+                // Insert post into database
+                $stmt = $conn->prepare("INSERT INTO posts (user_id, caption, image, location, created_at) VALUES (?, ?, ?, ?, NOW())");
+                $stmt->bind_param("isss", $user_id, $caption, $target_file, $location);
+
+                if ($stmt->execute()) {
+                    $new_post_id = $stmt->insert_id;
+                    $stmt->close();
+
+                    // Update user post count
+                    $update_stmt = $conn->prepare("UPDATE users SET posts_count = posts_count + 1 WHERE id = ?");
+                    $update_stmt->bind_param("i", $user_id);
+                    $update_stmt->execute();
+                    $update_stmt->close();
+
+                    header("Location: index.php?uploaded=1&id=" . $new_post_id);
+                    exit();
+                } else {
+                    unlink($target_file);
+                    $error = "Database error: " . $stmt->error;
+                }
+            } else {
+                $error = "Failed to upload image";
+            }
+        }
+    }
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Post - Shiro</title>
+    <link rel="stylesheet" href="css/upload.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Toast notification styles */
+        .toast {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 15px 20px;
+            border-radius: 10px;
+            color: white;
+            font-weight: 500;
+            z-index: 10000;
+            animation: slideIn 0.3s ease;
+        }
+        .toast.success { background: #22c55e; }
+        .toast.error { background: #ef4444; }
+        @keyframes slideIn {
+            from { transform: translateX(100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+
+        /* Additional responsive styles */
+        @media (max-width: 968px) {
+            .upload-container {
+                grid-template-columns: 1fr !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Show error if any -->
+    <?php if ($error): ?>
+        <div class="toast error" id="errorToast"><?php echo htmlspecialchars($error); ?></div>
+        <script>
+            setTimeout(() => {
+                const toast = document.getElementById('errorToast');
+                if (toast) toast.remove();
+            }, 5000);
+        </script>
+    <?php endif; ?>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.php" class="logo">
+                <div class="logo-icon">
+                    <div class="logo-circle"></div>
+                    <div class="logo-dot"></div>
+                </div>
+                <span class="logo-text">shiro</span>
+            </a>
+
+            <h1 class="page-title">Create New Post</h1>
+
+            <div class="nav-actions">
+                <button class="btn-close" onclick="window.location.href='index.php'">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Upload Container -->
+    <main class="upload-container">
+
+        <!-- FORM STARTS HERE - wraps BOTH left and right sides -->
+        <form method="POST" enctype="multipart/form-data" id="uploadForm" style="display: contents;">
+
+            <!-- Left Side - Preview/Edit Area -->
+            <div class="upload-left">
+                <div class="upload-area" id="uploadArea">
+                    <div class="upload-placeholder" id="uploadPlaceholder">
+                        <div class="upload-icon">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                        </div>
+                        <h3>Drag photos here</h3>
+                        <p>or click to browse</p>
+                        <button type="button" class="btn-select" onclick="document.getElementById('fileInput').click()">
+                            <input type="file" id="fileInput" name="image" accept="image/*" required
+                                onchange="previewImage(this)" style="display: none;">
+                            Select from computer
+                        </button>
+                    </div>
+
+                    <div class="preview-container" id="previewContainer" style="display: none;">
+                        <div class="media-preview" id="mediaPreview">
+                            <img id="previewImg" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                        </div>
+                        <button type="button" class="btn-remove" onclick="removeImage()">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Aspect Ratio Selector -->
+                <div class="aspect-ratio-selector" id="aspectRatioSelector" style="display: none;">
+                    <span>Aspect Ratio:</span>
+                    <button type="button" class="ratio-btn active" onclick="setRatio(this, 1)">
+                        <i class="fas fa-square"></i> 1:1
+                    </button>
+                    <button type="button" class="ratio-btn" onclick="setRatio(this, 0.8)">
+                        <i class="fas fa-portrait"></i> 4:5
+                    </button>
+                    <button type="button" class="ratio-btn" onclick="setRatio(this, 1.77)">
+                        <i class="fas fa-video"></i> 16:9
+                    </button>
+                </div>
+            </div>
+
+            <!-- Right Side - Details Form -->
+            <div class="upload-right">
+                <div class="upload-form">
+                    <!-- User Info -->
+                    <div class="user-info">
+                        <img src="<?php echo $_SESSION['user_avatar'] ?? 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face'; ?>"
+                            alt="User" class="user-avatar">
+                        <div class="user-details">
+                            <span class="username"><?php echo htmlspecialchars($_SESSION['username'] ?? 'user'); ?></span>
+                            <select class="visibility-select" name="visibility">
+                                <option value="public">Public</option>
+                                <option value="followers">Followers</option>
+                                <option value="private">Private</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Caption -->
+                    <div class="form-group">
+                        <textarea name="caption" class="caption-input" placeholder="Write a caption..." maxlength="2200"
+                            oninput="updateCharCount(this)"></textarea>
+                        <div class="char-count"><span id="charCount">0</span>/2200</div>
+                    </div>
+
+                    <!-- Location -->
+                    <div class="form-group">
+                        <div class="input-with-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <input type="text" name="location" placeholder="Add location">
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="form-actions">
+                        <button type="button" class="btn-draft" onclick="window.location.href='index.php'">Cancel</button>
+                        <button type="submit" class="btn-share" id="shareBtn" disabled>
+                            <span>Share</span> <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </form> <!-- FORM ENDS HERE - after both left and right sides -->
+
+    </main>
+
+    <script>
+        // Simple JavaScript for preview
+        function previewImage(input) {
+            if (input.files && input.files[0]) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    document.getElementById('previewImg').src = e.target.result;
+                    document.getElementById('uploadPlaceholder').style.display = 'none';
+                    document.getElementById('previewContainer').style.display = 'flex';
+                    document.getElementById('aspectRatioSelector').style.display = 'flex';
+                    document.getElementById('shareBtn').disabled = false;
+                }
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+        function removeImage() {
+            document.getElementById('fileInput').value = '';
+            document.getElementById('previewContainer').style.display = 'none';
+            document.getElementById('uploadPlaceholder').style.display = 'flex';
+            document.getElementById('aspectRatioSelector').style.display = 'none';
+            document.getElementById('shareBtn').disabled = true;
+        }
+
+        function updateCharCount(textarea) {
+            const count = textarea.value.length;
+            const counter = document.getElementById('charCount');
+            counter.textContent = count;
+
+            // Color warning
+            if (count > 2000) {
+                counter.style.color = '#ef4444';
+            } else if (count > 1500) {
+                counter.style.color = '#f59e0b';
+            } else {
+                counter.style.color = '#64748b';
+            }
+        }
+
+        function setRatio(btn, ratio) {
+            // Remove active from all buttons
+            document.querySelectorAll('.ratio-btn').forEach(b => b.classList.remove('active'));
+            // Add active to clicked button
+            btn.classList.add('active');
+
+            // Apply aspect ratio to preview
+            const preview = document.getElementById('mediaPreview');
+            if (ratio === 1) {
+                preview.style.aspectRatio = '1/1';
+            } else if (ratio === 0.8) {
+                preview.style.aspectRatio = '4/5';
+            } else if (ratio === 1.77) {
+                preview.style.aspectRatio = '16/9';
+            }
+        }
+
+        // Drag and drop support
+        const uploadArea = document.getElementById('uploadArea');
+
+        uploadArea.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            uploadArea.style.borderColor = '#3b82f6';
+            uploadArea.style.background = '#eff6ff';
+        });
+
+        uploadArea.addEventListener('dragleave', (e) => {
+            e.preventDefault();
+            uploadArea.style.borderColor = '#cbd5e1';
+            uploadArea.style.background = 'transparent';
+        });
+
+        uploadArea.addEventListener('drop', (e) => {
+            e.preventDefault();
+            uploadArea.style.borderColor = '#cbd5e1';
+            uploadArea.style.background = 'transparent';
+
+            const files = e.dataTransfer.files;
+            if (files.length > 0) {
+                const fileInput = document.getElementById('fileInput');
+                const dt = new DataTransfer();
+                dt.items.add(files[0]);
+                fileInput.files = dt.files;
+                previewImage(fileInput);
+            }
+        });
+
+        // Form validation before submit
+        document.getElementById('uploadForm').addEventListener('submit', function(e) {
+            const fileInput = document.getElementById('fileInput');
+            const caption = document.querySelector('textarea[name="caption"]').value.trim();
+
+            if (!fileInput.value) {
+                e.preventDefault();
+                alert('Please select an image');
+                return false;
+            }
+
+            if (!caption) {
+                e.preventDefault();
+                alert('Please write a caption');
+                return false;
+            }
+
+            // Show loading state
+            const shareBtn = document.getElementById('shareBtn');
+            shareBtn.innerHTML = '<span>Sharing...</span> <i class="fas fa-spinner fa-spin"></i>';
+            shareBtn.disabled = true;
+
+            return true;
+        });
+    </script>
+</body>
+</html>[14-Apr-2026 07:30:18 Europe/Berlin] Database connected successfully with config #1
+[14-Apr-2026 07:31:24 Europe/Berlin] Database connected successfully with config #1

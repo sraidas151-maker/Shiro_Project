@@ -1,0 +1,118 @@
+2026-04-10 09:30:18 - Request received
+Method: GET
+POST data: Array
+(
+)
+
+FILES data: Array
+(
+)
+
+Session: Array
+(
+    [user_id] => 106
+    [username] => kumar1234
+    [full_name] => Shiva Raidas
+    [user_avatar] => https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face
+)
+
+
+2026-04-10 09:30:29 - Request received
+Method: POST
+POST data: Array
+(
+    [visibility] => public
+    [caption] => dfghjk
+    [location] => 
+)
+
+FILES data: Array
+(
+    [image] => Array
+        (
+            [name] => 9_14_2024 10_09_35 AM.png
+            [full_path] => 9_14_2024 10_09_35 AM.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\phpAD2D.tmp
+            [error] => 0
+            [size] => 3465829
+        )
+
+)
+
+Session: Array
+(
+    [user_id] => 106
+    [username] => kumar1234
+    [full_name] => Shiva Raidas
+    [user_avatar] => https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face
+)
+
+
+2026-04-10 09:30:29 - Processing POST request
+File uploaded successfully to temp: C:\xampp\tmp\phpAD2D.tmp
+MIME type detected: image/png
+Target file: uploads/1775806229_69d8a71515064.png
+File moved successfully
+Database connection OK
+SUCCESS: Post inserted with ID 134
+User post count updated
+2026-04-10 09:30:48 - Request received
+Method: GET
+POST data: Array
+(
+)
+
+FILES data: Array
+(
+)
+
+Session: Array
+(
+    [user_id] => 106
+    [username] => kumar1234
+    [full_name] => Shiva Raidas
+    [user_avatar] => https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face
+)
+
+
+2026-04-10 09:31:01 - Request received
+Method: POST
+POST data: Array
+(
+    [visibility] => public
+    [caption] => wertyuio
+    [location] => 
+)
+
+FILES data: Array
+(
+    [image] => Array
+        (
+            [name] => 9_14_2024 9_59_43 AM.png
+            [full_path] => 9_14_2024 9_59_43 AM.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php2B86.tmp
+            [error] => 0
+            [size] => 584891
+        )
+
+)
+
+Session: Array
+(
+    [user_id] => 106
+    [username] => kumar1234
+    [full_name] => Shiva Raidas
+    [user_avatar] => https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face
+)
+
+
+2026-04-10 09:31:01 - Processing POST request
+File uploaded successfully to temp: C:\xampp\tmp\php2B86.tmp
+MIME type detected: image/png
+Target file: uploads/1775806261_69d8a7355c607.png
+File moved successfully
+Database connection OK
+SUCCESS: Post inserted with ID 135
+User post count updated

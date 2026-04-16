@@ -1,0 +1,2576 @@
+[02-Apr-2026 19:04:27 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:04:27 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:04:27 Europe/Berlin] AJAX Request - Action: get_unread_count, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:04:27 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'recipient_id' in 'where clause' in C:\xampp\htdocs\shiro website using html\ajax_handler.php:707
+Stack trace:
+#0 C:\xampp\htdocs\shiro website using html\ajax_handler.php(707): mysqli->prepare('SELECT COUNT(*)...')
+#1 C:\xampp\htdocs\shiro website using html\ajax_handler.php(131): getUnreadCount(Object(mysqli), 100)
+#2 {main}
+  thrown in C:\xampp\htdocs\shiro website using html\ajax_handler.php on line 707
+[02-Apr-2026 19:04:27 Europe/Berlin] AJAX Request - Action: get_notifications, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:04:27 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'n.recipient_id' in 'where clause' in C:\xampp\htdocs\shiro website using html\ajax_handler.php:640
+Stack trace:
+#0 C:\xampp\htdocs\shiro website using html\ajax_handler.php(640): mysqli->prepare('\r\n        SELEC...')
+#1 C:\xampp\htdocs\shiro website using html\ajax_handler.php(122): getNotifications(Object(mysqli), 100)
+#2 {main}
+  thrown in C:\xampp\htdocs\shiro website using html\ajax_handler.php on line 640
+[02-Apr-2026 19:04:29 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:04:29 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:04:29 Europe/Berlin] AJAX Request - Action: get_notifications, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:04:29 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'n.recipient_id' in 'where clause' in C:\xampp\htdocs\shiro website using html\ajax_handler.php:640
+Stack trace:
+#0 C:\xampp\htdocs\shiro website using html\ajax_handler.php(640): mysqli->prepare('\r\n        SELEC...')
+#1 C:\xampp\htdocs\shiro website using html\ajax_handler.php(122): getNotifications(Object(mysqli), 100)
+#2 {main}
+  thrown in C:\xampp\htdocs\shiro website using html\ajax_handler.php on line 640
+[02-Apr-2026 19:04:29 Europe/Berlin] AJAX Request - Action: get_unread_count, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:04:29 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'recipient_id' in 'where clause' in C:\xampp\htdocs\shiro website using html\ajax_handler.php:707
+Stack trace:
+#0 C:\xampp\htdocs\shiro website using html\ajax_handler.php(707): mysqli->prepare('SELECT COUNT(*)...')
+#1 C:\xampp\htdocs\shiro website using html\ajax_handler.php(131): getUnreadCount(Object(mysqli), 100)
+#2 {main}
+  thrown in C:\xampp\htdocs\shiro website using html\ajax_handler.php on line 707
+[02-Apr-2026 19:04:30 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:04:30 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:04:30 Europe/Berlin] AJAX Request - Action: check_like, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:04:30 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:04:35 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:04:36 Europe/Berlin] AJAX Request - Action: save, User: 100, POST: Array
+(
+    [post_id] => 104
+)
+
+[02-Apr-2026 19:04:36 Europe/Berlin] handleSave called: post_id=104, user_id=100
+[02-Apr-2026 19:04:36 Europe/Berlin] Save SUCCESS: post_id=104, user_id=100
+[02-Apr-2026 19:04:36 Europe/Berlin] Failed to log activity: Unknown column 'activity_table_name' in 'field list'
+[02-Apr-2026 19:04:44 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:04:44 Europe/Berlin] AJAX Request - Action: unsave, User: 100, POST: Array
+(
+    [post_id] => 104
+)
+
+[02-Apr-2026 19:04:44 Europe/Berlin] handleUnsave called: post_id=104, user_id=100
+[02-Apr-2026 19:04:44 Europe/Berlin] Unsave SUCCESS: post_id=104
+[02-Apr-2026 19:04:44 Europe/Berlin] Failed to log activity: Unknown column 'activity_table_name' in 'field list'
+[02-Apr-2026 19:04:46 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:04:46 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:04:46 Europe/Berlin] AJAX Request - Action: check_like, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:04:46 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:04:49 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:04:49 Europe/Berlin] AJAX Request - Action: save, User: 100, POST: Array
+(
+    [post_id] => 104
+)
+
+[02-Apr-2026 19:04:49 Europe/Berlin] handleSave called: post_id=104, user_id=100
+[02-Apr-2026 19:04:49 Europe/Berlin] Save SUCCESS: post_id=104, user_id=100
+[02-Apr-2026 19:04:49 Europe/Berlin] Failed to log activity: Unknown column 'activity_table_name' in 'field list'
+[02-Apr-2026 19:04:59 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:04:59 Europe/Berlin] AJAX Request - Action: check_like, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:04:59 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:04:59 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:05:08 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:05:08 Europe/Berlin] AJAX Request - Action: check_like, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:05:08 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:05:08 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:05:11 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:05:11 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:05:11 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:05:11 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:05:11 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:05:11 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:05:14 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:05:14 Europe/Berlin] AJAX Request - Action: save, User: 100, POST: Array
+(
+    [post_id] => 101
+)
+
+[02-Apr-2026 19:05:14 Europe/Berlin] handleSave called: post_id=101, user_id=100
+[02-Apr-2026 19:05:14 Europe/Berlin] Save SUCCESS: post_id=101, user_id=100
+[02-Apr-2026 19:05:14 Europe/Berlin] Failed to log activity: Unknown column 'activity_table_name' in 'field list'
+[02-Apr-2026 19:05:16 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:05:17 Europe/Berlin] AJAX Request - Action: save, User: 100, POST: Array
+(
+    [post_id] => 100
+)
+
+[02-Apr-2026 19:05:17 Europe/Berlin] handleSave called: post_id=100, user_id=100
+[02-Apr-2026 19:05:17 Europe/Berlin] Save SUCCESS: post_id=100, user_id=100
+[02-Apr-2026 19:05:17 Europe/Berlin] Failed to log activity: Unknown column 'activity_table_name' in 'field list'
+[02-Apr-2026 19:05:18 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:05:18 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:05:18 Europe/Berlin] AJAX Request - Action: check_like, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:05:18 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:05:57 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:05:58 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:05:58 Europe/Berlin] AJAX Request - Action: check_like, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:05:58 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:08:05 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:08:05 Europe/Berlin] AJAX Request - Action: get_comments, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:28:59 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:28:59 Europe/Berlin] AJAX Request - Action: check_like, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:28:59 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:28:59 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:29:01 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:29:01 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:29:01 Europe/Berlin] AJAX Request - Action: check_like, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:29:01 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:29:23 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:29:23 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:29:23 Europe/Berlin] AJAX Request - Action: check_like, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:29:24 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:29:27 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:29:27 Europe/Berlin] AJAX Request - Action: unsave, User: 100, POST: Array
+(
+    [post_id] => 104
+)
+
+[02-Apr-2026 19:29:27 Europe/Berlin] handleUnsave called: post_id=104, user_id=100
+[02-Apr-2026 19:29:27 Europe/Berlin] Unsave SUCCESS: post_id=104
+[02-Apr-2026 19:29:27 Europe/Berlin] Failed to log activity: Unknown column 'activity_table_name' in 'field list'
+[02-Apr-2026 19:29:28 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:29:28 Europe/Berlin] AJAX Request - Action: save, User: 100, POST: Array
+(
+    [post_id] => 104
+)
+
+[02-Apr-2026 19:29:28 Europe/Berlin] handleSave called: post_id=104, user_id=100
+[02-Apr-2026 19:29:28 Europe/Berlin] Save SUCCESS: post_id=104, user_id=100
+[02-Apr-2026 19:29:28 Europe/Berlin] Failed to log activity: Unknown column 'activity_table_name' in 'field list'
+[02-Apr-2026 19:29:37 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:29:37 Europe/Berlin] AJAX Request - Action: like, User: 100, POST: Array
+(
+    [post_id] => 104
+)
+
+[02-Apr-2026 19:29:37 Europe/Berlin] Failed to log activity: Unknown column 'activity_table_name' in 'field list'
+[02-Apr-2026 19:29:43 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:29:43 Europe/Berlin] AJAX Request - Action: check_like, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:29:43 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:29:43 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:29:49 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:29:49 Europe/Berlin] AJAX Request - Action: get_comments, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:30:27 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:30:27 Europe/Berlin] AJAX Request - Action: add_comment, User: 100, POST: Array
+(
+    [post_id] => 104
+    [content] => hello
+)
+
+[02-Apr-2026 19:30:27 Europe/Berlin] Failed to log activity: Unknown column 'activity_table_name' in 'field list'
+[02-Apr-2026 19:30:32 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:30:32 Europe/Berlin] AJAX Request - Action: unsave, User: 100, POST: Array
+(
+    [post_id] => 104
+)
+
+[02-Apr-2026 19:30:32 Europe/Berlin] handleUnsave called: post_id=104, user_id=100
+[02-Apr-2026 19:30:32 Europe/Berlin] Unsave SUCCESS: post_id=104
+[02-Apr-2026 19:30:32 Europe/Berlin] Failed to log activity: Unknown column 'activity_table_name' in 'field list'
+[02-Apr-2026 19:30:33 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:30:33 Europe/Berlin] AJAX Request - Action: save, User: 100, POST: Array
+(
+    [post_id] => 104
+)
+
+[02-Apr-2026 19:30:33 Europe/Berlin] handleSave called: post_id=104, user_id=100
+[02-Apr-2026 19:30:33 Europe/Berlin] Save SUCCESS: post_id=104, user_id=100
+[02-Apr-2026 19:30:33 Europe/Berlin] Failed to log activity: Unknown column 'activity_table_name' in 'field list'
+[02-Apr-2026 19:30:53 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:30:53 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:30:53 Europe/Berlin] AJAX Request - Action: get_notifications, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:30:53 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'n.recipient_id' in 'where clause' in C:\xampp\htdocs\shiro website using html\ajax_handler.php:640
+Stack trace:
+#0 C:\xampp\htdocs\shiro website using html\ajax_handler.php(640): mysqli->prepare('\r\n        SELEC...')
+#1 C:\xampp\htdocs\shiro website using html\ajax_handler.php(122): getNotifications(Object(mysqli), 100)
+#2 {main}
+  thrown in C:\xampp\htdocs\shiro website using html\ajax_handler.php on line 640
+[02-Apr-2026 19:30:53 Europe/Berlin] AJAX Request - Action: get_unread_count, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:30:53 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'recipient_id' in 'where clause' in C:\xampp\htdocs\shiro website using html\ajax_handler.php:707
+Stack trace:
+#0 C:\xampp\htdocs\shiro website using html\ajax_handler.php(707): mysqli->prepare('SELECT COUNT(*)...')
+#1 C:\xampp\htdocs\shiro website using html\ajax_handler.php(131): getUnreadCount(Object(mysqli), 100)
+#2 {main}
+  thrown in C:\xampp\htdocs\shiro website using html\ajax_handler.php on line 707
+[02-Apr-2026 19:30:54 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:30:54 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:30:54 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:30:54 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:30:54 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:30:54 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:32:01 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:32:01 Europe/Berlin] AJAX Request - Action: check_like, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:32:01 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:32:01 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:32:06 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:32:06 Europe/Berlin] AJAX Request - Action: save, User: 100, POST: Array
+(
+    [post_id] => 105
+)
+
+[02-Apr-2026 19:32:06 Europe/Berlin] handleSave called: post_id=105, user_id=100
+[02-Apr-2026 19:32:06 Europe/Berlin] Save SUCCESS: post_id=105, user_id=100
+[02-Apr-2026 19:32:06 Europe/Berlin] Failed to log activity: Unknown column 'activity_table_name' in 'field list'
+[02-Apr-2026 19:32:13 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:32:13 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:32:13 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:32:13 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:32:13 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:32:13 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:32:13 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:32:13 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:32:24 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:32:24 Europe/Berlin] AJAX Request - Action: like, User: 100, POST: Array
+(
+    [post_id] => 105
+)
+
+[02-Apr-2026 19:32:24 Europe/Berlin] Failed to log activity: Unknown column 'activity_table_name' in 'field list'
+[02-Apr-2026 19:38:26 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:38:26 Europe/Berlin] AJAX Request - Action: check_like, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:38:26 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:38:26 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:38:44 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:38:44 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:38:44 Europe/Berlin] AJAX Request - Action: check_like, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:38:44 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:39:02 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:39:02 Europe/Berlin] AJAX Request - Action: check_like, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:39:02 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:39:02 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:39:06 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:39:06 Europe/Berlin] AJAX Request - Action: unlike, User: 100, POST: Array
+(
+    [post_id] => 105
+)
+
+[02-Apr-2026 19:39:06 Europe/Berlin] Failed to log activity: Unknown column 'activity_table_name' in 'field list'
+[02-Apr-2026 19:39:06 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:39:06 Europe/Berlin] AJAX Request - Action: like, User: 100, POST: Array
+(
+    [post_id] => 105
+)
+
+[02-Apr-2026 19:39:06 Europe/Berlin] Failed to log activity: Unknown column 'activity_table_name' in 'field list'
+[02-Apr-2026 19:50:12 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:50:12 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:50:12 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:50:12 Europe/Berlin] AJAX Request - Action: check_like, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:50:12 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:50:12 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:50:12 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:50:12 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:50:12 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:50:12 Europe/Berlin] AJAX Request - Action: check_like, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:50:12 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:50:12 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:50:12 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:50:12 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:50:12 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:50:12 Europe/Berlin] AJAX Request - Action: check_like, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:50:12 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:50:12 Europe/Berlin] AJAX Request - Action: check_like, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:50:12 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:50:12 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:50:12 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:50:13 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:50:13 Europe/Berlin] AJAX Request - Action: check_like, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:50:13 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:50:13 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:50:13 Europe/Berlin] AJAX Request - Action: check_like, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:50:13 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:50:13 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:50:13 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:50:13 Europe/Berlin] AJAX Request - Action: check_like, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:50:13 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:50:13 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:50:13 Europe/Berlin] AJAX Request - Action: check_like, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:50:13 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:50:13 Europe/Berlin] AJAX Request - Action: check_like, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:50:13 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:50:20 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:50:20 Europe/Berlin] AJAX Request - Action: save, User: 100, POST: Array
+(
+    [post_id] => 107
+)
+
+[02-Apr-2026 19:50:20 Europe/Berlin] handleSave called: post_id=107, user_id=100
+[02-Apr-2026 19:50:20 Europe/Berlin] Save SUCCESS: post_id=107, user_id=100
+[02-Apr-2026 19:50:20 Europe/Berlin] Failed to log activity: Unknown column 'activity_table_name' in 'field list'
+[02-Apr-2026 19:50:21 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:50:21 Europe/Berlin] AJAX Request - Action: like, User: 100, POST: Array
+(
+    [post_id] => 107
+)
+
+[02-Apr-2026 19:50:21 Europe/Berlin] Failed to log activity: Unknown column 'activity_table_name' in 'field list'
+[02-Apr-2026 19:50:28 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:50:28 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:50:28 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:50:28 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:50:28 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:50:28 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:50:28 Europe/Berlin] AJAX Request - Action: check_like, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:50:28 Europe/Berlin] AJAX Request - Action: check_like, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:50:28 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:50:28 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:50:28 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:50:28 Europe/Berlin] AJAX Request - Action: check_like, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:50:28 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:50:28 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:50:28 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:50:28 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:50:28 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:50:28 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:50:28 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:50:28 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:50:28 Europe/Berlin] AJAX Request - Action: check_like, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:50:28 Europe/Berlin] AJAX Request - Action: check_like, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:50:28 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:50:28 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:50:29 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:50:29 Europe/Berlin] AJAX Request - Action: check_like, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:50:29 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:50:29 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:50:29 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:50:29 Europe/Berlin] AJAX Request - Action: check_like, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:50:29 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:50:29 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:50:29 Europe/Berlin] AJAX Request - Action: check_like, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:50:29 Europe/Berlin] AJAX Request - Action: check_like, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:50:29 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:50:29 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:50:35 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:50:35 Europe/Berlin] AJAX Request - Action: like, User: 100, POST: Array
+(
+    [post_id] => 113
+)
+
+[02-Apr-2026 19:50:35 Europe/Berlin] Failed to log activity: Unknown column 'activity_table_name' in 'field list'
+[02-Apr-2026 19:50:40 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:50:40 Europe/Berlin] AJAX Request - Action: like, User: 100, POST: Array
+(
+    [post_id] => 106
+)
+
+[02-Apr-2026 19:50:40 Europe/Berlin] Failed to log activity: Unknown column 'activity_table_name' in 'field list'
+[02-Apr-2026 19:50:44 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:50:44 Europe/Berlin] AJAX Request - Action: like, User: 100, POST: Array
+(
+    [post_id] => 108
+)
+
+[02-Apr-2026 19:50:44 Europe/Berlin] Failed to log activity: Unknown column 'activity_table_name' in 'field list'
+[02-Apr-2026 19:50:46 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:50:46 Europe/Berlin] AJAX Request - Action: get_comments, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:50:48 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:50:48 Europe/Berlin] AJAX Request - Action: like, User: 100, POST: Array
+(
+    [post_id] => 109
+)
+
+[02-Apr-2026 19:50:48 Europe/Berlin] Failed to log activity: Unknown column 'activity_table_name' in 'field list'
+[02-Apr-2026 19:51:07 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:07 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:07 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:07 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:07 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:07 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:07 Europe/Berlin] AJAX Request - Action: check_like, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:07 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:07 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:07 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:07 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:07 Europe/Berlin] AJAX Request - Action: check_like, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:07 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:07 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:07 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:07 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:07 Europe/Berlin] AJAX Request - Action: check_like, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:07 Europe/Berlin] AJAX Request - Action: check_like, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:07 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:07 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:07 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:07 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:07 Europe/Berlin] AJAX Request - Action: check_like, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:07 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:07 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:07 Europe/Berlin] AJAX Request - Action: check_like, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:07 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:07 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:07 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:07 Europe/Berlin] AJAX Request - Action: check_like, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:07 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:07 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:07 Europe/Berlin] AJAX Request - Action: check_like, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:08 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:08 Europe/Berlin] AJAX Request - Action: check_like, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:08 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:12 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:12 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:12 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:12 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:12 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:12 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:12 Europe/Berlin] AJAX Request - Action: check_like, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:12 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:12 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:12 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:12 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:12 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:12 Europe/Berlin] AJAX Request - Action: check_like, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:12 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:12 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:12 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:12 Europe/Berlin] AJAX Request - Action: check_like, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:12 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:12 Europe/Berlin] AJAX Request - Action: check_like, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:12 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:12 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:12 Europe/Berlin] AJAX Request - Action: check_like, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:12 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:12 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:13 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:13 Europe/Berlin] AJAX Request - Action: check_like, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:13 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:13 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:13 Europe/Berlin] AJAX Request - Action: check_like, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:13 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:13 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:13 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:13 Europe/Berlin] AJAX Request - Action: check_like, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:13 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:13 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:13 Europe/Berlin] AJAX Request - Action: check_like, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:17 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:17 Europe/Berlin] AJAX Request - Action: get_comments, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:49 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:50 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:50 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:50 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:50 Europe/Berlin] AJAX Request - Action: check_like, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:50 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:50 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:50 Europe/Berlin] AJAX Request - Action: check_like, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:50 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:50 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:50 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:50 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:50 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:50 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:50 Europe/Berlin] AJAX Request - Action: check_like, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:50 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:50 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:50 Europe/Berlin] AJAX Request - Action: check_like, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:50 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:50 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:50 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:50 Europe/Berlin] AJAX Request - Action: check_like, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:50 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:50 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:50 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:50 Europe/Berlin] AJAX Request - Action: check_like, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:50 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:50 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:50 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:50 Europe/Berlin] AJAX Request - Action: check_like, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:50 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:50 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:50 Europe/Berlin] AJAX Request - Action: check_like, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:50 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:50 Europe/Berlin] AJAX Request - Action: check_like, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:50 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:59 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:59 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:59 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:59 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:59 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:59 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:59 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:59 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:59 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:59 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:59 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:59 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:59 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:59 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:59 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:59 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:59 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:59 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:59 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:51:59 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:59 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:59 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:59 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:51:59 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:52:05 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:52:05 Europe/Berlin] AJAX Request - Action: like, User: 100, POST: Array
+(
+    [post_id] => 110
+)
+
+[02-Apr-2026 19:52:05 Europe/Berlin] Failed to log activity: Unknown column 'activity_table_name' in 'field list'
+[02-Apr-2026 19:56:27 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:56:27 Europe/Berlin] AJAX Request - Action: unlike, User: 100, POST: Array
+(
+    [post_id] => 106
+)
+
+[02-Apr-2026 19:56:27 Europe/Berlin] Failed to log activity: Unknown column 'activity_table_name' in 'field list'
+[02-Apr-2026 19:56:28 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:56:28 Europe/Berlin] AJAX Request - Action: like, User: 100, POST: Array
+(
+    [post_id] => 106
+)
+
+[02-Apr-2026 19:56:28 Europe/Berlin] Failed to log activity: Unknown column 'activity_table_name' in 'field list'
+[02-Apr-2026 19:56:31 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:56:31 Europe/Berlin] AJAX Request - Action: unlike, User: 100, POST: Array
+(
+    [post_id] => 106
+)
+
+[02-Apr-2026 19:56:31 Europe/Berlin] Failed to log activity: Unknown column 'activity_table_name' in 'field list'
+[02-Apr-2026 19:56:31 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:56:31 Europe/Berlin] AJAX Request - Action: like, User: 100, POST: Array
+(
+    [post_id] => 106
+)
+
+[02-Apr-2026 19:56:31 Europe/Berlin] Failed to log activity: Unknown column 'activity_table_name' in 'field list'
+[02-Apr-2026 19:56:35 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:56:35 Europe/Berlin] AJAX Request - Action: unlike, User: 100, POST: Array
+(
+    [post_id] => 107
+)
+
+[02-Apr-2026 19:56:35 Europe/Berlin] Failed to log activity: Unknown column 'activity_table_name' in 'field list'
+[02-Apr-2026 19:56:45 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:56:45 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:56:45 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:56:45 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:56:45 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:56:45 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:56:45 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:56:45 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:56:45 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:56:45 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:56:45 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:56:45 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:56:45 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:56:45 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:56:45 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:56:45 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:56:45 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:56:45 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:56:45 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:56:45 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:56:45 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:56:45 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:56:45 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:56:45 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:56:48 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:56:48 Europe/Berlin] AJAX Request - Action: unlike, User: 100, POST: Array
+(
+    [post_id] => 106
+)
+
+[02-Apr-2026 19:56:48 Europe/Berlin] Failed to log activity: Unknown column 'activity_table_name' in 'field list'
+[02-Apr-2026 19:56:49 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:56:49 Europe/Berlin] AJAX Request - Action: like, User: 100, POST: Array
+(
+    [post_id] => 106
+)
+
+[02-Apr-2026 19:56:49 Europe/Berlin] Failed to log activity: Unknown column 'activity_table_name' in 'field list'
+[02-Apr-2026 19:56:53 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:56:53 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:56:53 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:56:53 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:56:53 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:56:53 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:56:53 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:56:53 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:56:53 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:56:53 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:56:53 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:56:53 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:56:53 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:56:53 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:56:53 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:56:53 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:56:53 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:56:53 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:56:53 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:56:53 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:56:53 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:56:53 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:56:53 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:56:53 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:57:02 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:57:02 Europe/Berlin] AJAX Request - Action: check_like, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:57:02 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:57:02 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:57:10 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:57:10 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:57:10 Europe/Berlin] AJAX Request - Action: check_like, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:57:10 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:57:42 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:57:42 Europe/Berlin] AJAX Request - Action: check_like, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:57:42 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:57:42 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:57:46 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:57:46 Europe/Berlin] AJAX Request - Action: unlike, User: 100, POST: Array
+(
+    [post_id] => 113
+)
+
+[02-Apr-2026 19:57:46 Europe/Berlin] Failed to log activity: Unknown column 'activity_table_name' in 'field list'
+[02-Apr-2026 19:57:46 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:57:46 Europe/Berlin] AJAX Request - Action: like, User: 100, POST: Array
+(
+    [post_id] => 113
+)
+
+[02-Apr-2026 19:57:46 Europe/Berlin] Failed to log activity: Unknown column 'activity_table_name' in 'field list'
+[02-Apr-2026 19:58:20 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:58:20 Europe/Berlin] AJAX Request - Action: check_like, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 19:58:20 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 19:58:20 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 20:00:10 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:00:10 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:00:10 Europe/Berlin] AJAX Request - Action: check_like, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 20:00:10 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 20:00:12 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:00:12 Europe/Berlin] AJAX Request - Action: save, User: 100, POST: Array
+(
+    [post_id] => 113
+)
+
+[02-Apr-2026 20:00:12 Europe/Berlin] handleSave called: post_id=113, user_id=100
+[02-Apr-2026 20:00:12 Europe/Berlin] Save SUCCESS: post_id=113, user_id=100
+[02-Apr-2026 20:00:12 Europe/Berlin] Failed to log activity: Unknown column 'activity_table_name' in 'field list'
+[02-Apr-2026 20:00:20 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:00:20 Europe/Berlin] AJAX Request - Action: unlike, User: 100, POST: Array
+(
+    [post_id] => 100
+)
+
+[02-Apr-2026 20:00:22 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:00:22 Europe/Berlin] AJAX Request - Action: unsave, User: 100, POST: Array
+(
+    [post_id] => 100
+)
+
+[02-Apr-2026 20:00:22 Europe/Berlin] handleUnsave called: post_id=100, user_id=100
+[02-Apr-2026 20:00:22 Europe/Berlin] Unsave SUCCESS: post_id=100
+[02-Apr-2026 20:00:22 Europe/Berlin] Failed to log activity: Unknown column 'activity_table_name' in 'field list'
+[02-Apr-2026 20:00:23 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:00:23 Europe/Berlin] AJAX Request - Action: unsave, User: 100, POST: Array
+(
+    [post_id] => 104
+)
+
+[02-Apr-2026 20:00:23 Europe/Berlin] handleUnsave called: post_id=104, user_id=100
+[02-Apr-2026 20:00:23 Europe/Berlin] Unsave SUCCESS: post_id=104
+[02-Apr-2026 20:00:23 Europe/Berlin] Failed to log activity: Unknown column 'activity_table_name' in 'field list'
+[02-Apr-2026 20:00:27 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:00:27 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:00:27 Europe/Berlin] AJAX Request - Action: check_like, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 20:00:27 Europe/Berlin] AJAX Request - Action: check_save, User: 100, POST: Array
+(
+)
+
+[02-Apr-2026 20:02:54 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:02:54 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:02:54 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:02:54 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:02:58 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:02:58 Europe/Berlin] AJAX Request - Action: save, User: 102, POST: Array
+(
+    [post_id] => 103
+)
+
+[02-Apr-2026 20:02:58 Europe/Berlin] handleSave called: post_id=103, user_id=102
+[02-Apr-2026 20:02:58 Europe/Berlin] Save SUCCESS: post_id=103, user_id=102
+[02-Apr-2026 20:02:58 Europe/Berlin] Failed to log activity: Unknown column 'activity_table_name' in 'field list'
+[02-Apr-2026 20:03:00 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:03:00 Europe/Berlin] AJAX Request - Action: unlike, User: 102, POST: Array
+(
+    [post_id] => 103
+)
+
+[02-Apr-2026 20:03:01 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:03:01 Europe/Berlin] AJAX Request - Action: unlike, User: 102, POST: Array
+(
+    [post_id] => 103
+)
+
+[02-Apr-2026 20:03:05 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:03:05 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:03:05 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:03:05 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:03:15 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:03:15 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:03:15 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:03:15 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:03:20 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:03:20 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:03:20 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:03:20 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:05:00 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:05:00 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:05:00 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:05:00 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:05:00 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:05:00 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:05:00 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:05:00 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:05:00 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:05:00 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:05:00 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:05:00 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:05:00 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:05:00 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:05:00 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:05:00 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:05:00 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:05:00 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:05:00 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:05:00 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:05:00 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:05:00 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:05:00 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:05:00 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:05:00 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:05:00 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:05:00 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:05:00 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:05:00 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:05:00 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:05:00 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:05:00 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:05:00 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:05:00 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:05:00 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:05:00 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:05:03 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:05:03 Europe/Berlin] AJAX Request - Action: like, User: 102, POST: Array
+(
+    [post_id] => 106
+)
+
+[02-Apr-2026 20:05:03 Europe/Berlin] Failed to create notification: Unknown column 'recipient_id' in 'field list'
+[02-Apr-2026 20:05:03 Europe/Berlin] Failed to log activity: Unknown column 'activity_table_name' in 'field list'
+[02-Apr-2026 20:05:06 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:05:06 Europe/Berlin] AJAX Request - Action: save, User: 102, POST: Array
+(
+    [post_id] => 106
+)
+
+[02-Apr-2026 20:05:06 Europe/Berlin] handleSave called: post_id=106, user_id=102
+[02-Apr-2026 20:05:06 Europe/Berlin] Save SUCCESS: post_id=106, user_id=102
+[02-Apr-2026 20:05:06 Europe/Berlin] Failed to log activity: Unknown column 'activity_table_name' in 'field list'
+[02-Apr-2026 20:05:12 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:05:12 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:05:12 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:05:12 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:05:12 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:05:12 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:05:12 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:05:12 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:05:12 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:05:12 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:05:13 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:05:13 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:05:13 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:05:13 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:05:13 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:05:13 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:05:13 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:05:13 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:05:13 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:05:13 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:05:13 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:05:13 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:05:13 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:05:13 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:05:13 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:05:13 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:05:13 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:05:13 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:05:13 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:05:13 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:05:13 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:05:13 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:05:13 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:05:13 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:05:13 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:05:13 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:05:18 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:05:18 Europe/Berlin] AJAX Request - Action: unlike, User: 102, POST: Array
+(
+    [post_id] => 106
+)
+
+[02-Apr-2026 20:05:18 Europe/Berlin] Failed to log activity: Unknown column 'activity_table_name' in 'field list'
+[02-Apr-2026 20:05:20 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:05:20 Europe/Berlin] AJAX Request - Action: like, User: 102, POST: Array
+(
+    [post_id] => 106
+)
+
+[02-Apr-2026 20:05:20 Europe/Berlin] Failed to create notification: Unknown column 'recipient_id' in 'field list'
+[02-Apr-2026 20:05:20 Europe/Berlin] Failed to log activity: Unknown column 'activity_table_name' in 'field list'
+[02-Apr-2026 20:05:21 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:05:21 Europe/Berlin] AJAX Request - Action: unlike, User: 102, POST: Array
+(
+    [post_id] => 106
+)
+
+[02-Apr-2026 20:05:21 Europe/Berlin] Failed to log activity: Unknown column 'activity_table_name' in 'field list'
+[02-Apr-2026 20:05:22 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:05:22 Europe/Berlin] AJAX Request - Action: like, User: 102, POST: Array
+(
+    [post_id] => 106
+)
+
+[02-Apr-2026 20:05:22 Europe/Berlin] Failed to create notification: Unknown column 'recipient_id' in 'field list'
+[02-Apr-2026 20:05:22 Europe/Berlin] Failed to log activity: Unknown column 'activity_table_name' in 'field list'
+[02-Apr-2026 20:05:23 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:05:23 Europe/Berlin] AJAX Request - Action: unlike, User: 102, POST: Array
+(
+    [post_id] => 106
+)
+
+[02-Apr-2026 20:05:23 Europe/Berlin] Failed to log activity: Unknown column 'activity_table_name' in 'field list'
+[02-Apr-2026 20:05:32 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:05:32 Europe/Berlin] AJAX Request - Action: get_comments, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:05:33 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:05:33 Europe/Berlin] AJAX Request - Action: add_comment, User: 102, POST: Array
+(
+    [post_id] => 106
+    [content] => uuidb
+)
+
+[02-Apr-2026 20:05:33 Europe/Berlin] Failed to create notification: Unknown column 'recipient_id' in 'field list'
+[02-Apr-2026 20:05:33 Europe/Berlin] Failed to log activity: Unknown column 'activity_table_name' in 'field list'
+[02-Apr-2026 20:05:35 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:05:35 Europe/Berlin] AJAX Request - Action: share, User: 102, POST: Array
+(
+    [post_id] => 106
+)
+
+[02-Apr-2026 20:05:35 Europe/Berlin] Failed to log activity: Unknown column 'activity_table_name' in 'field list'
+[02-Apr-2026 20:05:40 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:05:40 Europe/Berlin] AJAX Request - Action: unsave, User: 102, POST: Array
+(
+    [post_id] => 106
+)
+
+[02-Apr-2026 20:05:40 Europe/Berlin] handleUnsave called: post_id=106, user_id=102
+[02-Apr-2026 20:05:40 Europe/Berlin] Unsave SUCCESS: post_id=106
+[02-Apr-2026 20:05:40 Europe/Berlin] Failed to log activity: Unknown column 'activity_table_name' in 'field list'
+[02-Apr-2026 20:11:19 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:11:19 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:11:19 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:11:19 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:11:19 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:11:19 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:11:19 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:11:19 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:11:19 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:11:19 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:11:19 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:11:19 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:11:19 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:11:19 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:11:19 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:11:19 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:11:19 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:11:19 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:11:19 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:11:19 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:11:19 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:11:19 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:11:19 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:11:19 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:11:19 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:11:19 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:11:19 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:11:19 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:11:19 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:11:19 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:11:19 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:11:19 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:11:19 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:11:19 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:11:19 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:11:19 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:11:23 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:11:23 Europe/Berlin] AJAX Request - Action: like, User: 102, POST: Array
+(
+    [post_id] => 106
+)
+
+[02-Apr-2026 20:11:23 Europe/Berlin] Failed to create notification: Unknown column 'recipient_id' in 'field list'
+[02-Apr-2026 20:11:23 Europe/Berlin] Failed to log activity: Unknown column 'activity_table_name' in 'field list'
+[02-Apr-2026 20:11:24 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:11:24 Europe/Berlin] AJAX Request - Action: unlike, User: 102, POST: Array
+(
+    [post_id] => 106
+)
+
+[02-Apr-2026 20:11:24 Europe/Berlin] Failed to log activity: Unknown column 'activity_table_name' in 'field list'
+[02-Apr-2026 20:11:25 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:11:25 Europe/Berlin] AJAX Request - Action: like, User: 102, POST: Array
+(
+    [post_id] => 106
+)
+
+[02-Apr-2026 20:11:25 Europe/Berlin] Failed to create notification: Unknown column 'recipient_id' in 'field list'
+[02-Apr-2026 20:11:25 Europe/Berlin] Failed to log activity: Unknown column 'activity_table_name' in 'field list'
+[02-Apr-2026 20:11:27 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:11:27 Europe/Berlin] AJAX Request - Action: unlike, User: 102, POST: Array
+(
+    [post_id] => 106
+)
+
+[02-Apr-2026 20:11:27 Europe/Berlin] Failed to log activity: Unknown column 'activity_table_name' in 'field list'
+[02-Apr-2026 20:11:28 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:11:28 Europe/Berlin] AJAX Request - Action: like, User: 102, POST: Array
+(
+    [post_id] => 106
+)
+
+[02-Apr-2026 20:11:28 Europe/Berlin] Failed to create notification: Unknown column 'recipient_id' in 'field list'
+[02-Apr-2026 20:11:28 Europe/Berlin] Failed to log activity: Unknown column 'activity_table_name' in 'field list'
+[02-Apr-2026 20:11:29 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:11:29 Europe/Berlin] AJAX Request - Action: unlike, User: 102, POST: Array
+(
+    [post_id] => 106
+)
+
+[02-Apr-2026 20:11:30 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:11:30 Europe/Berlin] AJAX Request - Action: unlike, User: 102, POST: Array
+(
+    [post_id] => 106
+)
+
+[02-Apr-2026 20:11:31 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:11:31 Europe/Berlin] AJAX Request - Action: save, User: 102, POST: Array
+(
+    [post_id] => 106
+)
+
+[02-Apr-2026 20:11:31 Europe/Berlin] handleSave called: post_id=106, user_id=102
+[02-Apr-2026 20:11:31 Europe/Berlin] Save SUCCESS: post_id=106, user_id=102
+[02-Apr-2026 20:11:31 Europe/Berlin] Failed to log activity: Unknown column 'activity_table_name' in 'field list'
+[02-Apr-2026 20:11:33 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:11:33 Europe/Berlin] AJAX Request - Action: unlike, User: 102, POST: Array
+(
+    [post_id] => 106
+)
+
+[02-Apr-2026 20:11:35 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:11:35 Europe/Berlin] AJAX Request - Action: get_comments, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:11:37 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:11:37 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:11:37 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:11:37 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:11:37 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:11:37 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:11:37 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:11:37 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:11:37 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:11:37 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:11:38 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:11:38 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:11:38 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:11:38 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:11:38 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:11:38 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:11:38 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:11:38 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:11:38 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:11:38 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:11:38 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:11:38 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:11:38 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:11:38 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:11:38 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:11:38 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:11:38 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:11:38 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:11:38 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:11:38 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:11:38 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:11:38 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:11:38 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:11:38 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:11:38 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:11:38 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:11:41 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:11:41 Europe/Berlin] AJAX Request - Action: like, User: 102, POST: Array
+(
+    [post_id] => 107
+)
+
+[02-Apr-2026 20:11:41 Europe/Berlin] Failed to create notification: Unknown column 'recipient_id' in 'field list'
+[02-Apr-2026 20:11:41 Europe/Berlin] Failed to log activity: Unknown column 'activity_table_name' in 'field list'
+[02-Apr-2026 20:11:42 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:11:42 Europe/Berlin] AJAX Request - Action: unlike, User: 102, POST: Array
+(
+    [post_id] => 107
+)
+
+[02-Apr-2026 20:11:44 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:11:44 Europe/Berlin] AJAX Request - Action: unlike, User: 102, POST: Array
+(
+    [post_id] => 107
+)
+
+[02-Apr-2026 20:11:44 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:11:44 Europe/Berlin] AJAX Request - Action: unlike, User: 102, POST: Array
+(
+    [post_id] => 107
+)
+
+[02-Apr-2026 20:12:26 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:12:26 Europe/Berlin] AJAX Request - Action: unlike, User: 102, POST: Array
+(
+    [post_id] => 107
+)
+
+[02-Apr-2026 20:12:28 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:12:28 Europe/Berlin] AJAX Request - Action: unlike, User: 102, POST: Array
+(
+    [post_id] => 107
+)
+
+[02-Apr-2026 20:12:31 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:12:31 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:12:31 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:12:31 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:12:31 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:12:31 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:12:31 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:12:31 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:12:31 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:12:31 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:12:31 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:12:31 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:12:31 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:12:31 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:12:31 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:12:31 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:12:31 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:12:31 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:12:31 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:12:31 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:12:31 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:12:31 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:12:31 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:12:31 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:12:31 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:12:31 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:12:31 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:12:31 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:12:31 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:12:31 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:12:31 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:12:31 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:12:31 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:12:31 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:12:31 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:12:31 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:12:36 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:12:36 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:12:36 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:12:36 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:12:36 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:12:36 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:12:36 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:12:36 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:12:36 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:12:36 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:12:36 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:12:36 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:12:36 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:12:36 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:12:36 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:12:36 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:12:36 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:12:36 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:12:36 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:12:36 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:12:36 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:12:36 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:12:36 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:12:36 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:12:36 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:12:36 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:12:36 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:12:36 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:12:36 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:12:36 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:12:36 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:12:36 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:12:36 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:12:36 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:12:36 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:12:36 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:12:41 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:12:41 Europe/Berlin] AJAX Request - Action: unlike, User: 102, POST: Array
+(
+    [post_id] => 103
+)
+
+[02-Apr-2026 20:12:44 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:12:44 Europe/Berlin] AJAX Request - Action: unlike, User: 102, POST: Array
+(
+    [post_id] => 106
+)
+
+[02-Apr-2026 20:13:19 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:13:19 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:13:19 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:13:19 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:13:19 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:13:19 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:13:19 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:13:19 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:13:19 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:13:19 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:13:19 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:13:19 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:13:19 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:13:19 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:13:19 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:13:19 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:13:19 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:13:19 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:13:19 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:13:20 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:13:20 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:13:20 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:13:20 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:13:20 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:13:20 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:13:20 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:13:20 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:13:20 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:13:20 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:13:20 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:13:20 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:13:20 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:13:20 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:13:20 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:13:20 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:13:20 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:13:22 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:13:22 Europe/Berlin] AJAX Request - Action: unlike, User: 102, POST: Array
+(
+    [post_id] => 106
+)
+
+[02-Apr-2026 20:13:22 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in C:\xampp\htdocs\shiro website using html\ajax_handler.php:345
+Stack trace:
+#0 C:\xampp\htdocs\shiro website using html\ajax_handler.php(345): mysqli_stmt->bind_param('i', 106, 102)
+#1 C:\xampp\htdocs\shiro website using html\ajax_handler.php(80): handleUnlike(Object(mysqli), 102)
+#2 {main}
+  thrown in C:\xampp\htdocs\shiro website using html\ajax_handler.php on line 345
+[02-Apr-2026 20:14:36 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:14:36 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:14:36 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:14:36 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:14:36 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:14:36 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:14:36 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:14:36 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:14:36 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:14:36 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:14:36 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:14:36 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:14:36 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:14:36 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:14:36 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:14:36 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:14:36 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:14:36 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:14:36 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:14:36 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:14:36 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:14:36 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:14:36 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:14:36 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:14:36 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:14:36 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:14:36 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:14:36 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:14:36 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:14:36 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:14:36 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:14:36 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:14:36 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:14:36 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:14:36 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:14:36 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:14:45 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:14:45 Europe/Berlin] AJAX Request - Action: unlike, User: 102, POST: Array
+(
+    [post_id] => 106
+)
+
+[02-Apr-2026 20:14:52 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:14:52 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:14:52 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:14:52 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:14:52 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:14:52 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:14:52 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:14:52 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:14:52 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:14:52 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:14:52 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:14:52 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:14:52 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:14:52 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:14:52 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:14:52 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:14:52 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:14:52 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:14:52 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:14:52 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:14:52 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:14:52 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:14:53 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:14:53 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:14:53 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:14:53 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:14:53 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:14:53 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:14:53 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:14:53 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:14:53 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:14:53 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:14:53 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:14:53 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:14:53 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:14:53 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:14:54 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:14:54 Europe/Berlin] AJAX Request - Action: unlike, User: 102, POST: Array
+(
+    [post_id] => 103
+)
+
+[02-Apr-2026 20:14:56 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:14:56 Europe/Berlin] AJAX Request - Action: unlike, User: 102, POST: Array
+(
+    [post_id] => 103
+)
+
+[02-Apr-2026 20:14:59 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:14:59 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:14:59 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:14:59 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:15:02 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:15:02 Europe/Berlin] AJAX Request - Action: unlike, User: 102, POST: Array
+(
+    [post_id] => 103
+)
+
+[02-Apr-2026 20:15:03 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:15:03 Europe/Berlin] AJAX Request - Action: unlike, User: 102, POST: Array
+(
+    [post_id] => 103
+)
+
+[02-Apr-2026 20:15:05 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:15:05 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:15:05 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:15:05 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:15:05 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:15:05 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:15:05 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:15:05 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:15:05 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:15:05 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:15:05 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:15:05 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:15:05 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:15:05 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:15:05 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:15:05 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:15:05 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:15:05 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:15:05 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:15:05 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:15:05 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:15:05 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:15:05 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:15:05 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:15:05 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:15:05 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:15:05 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:15:05 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:15:05 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:15:05 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:15:05 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:15:05 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:15:05 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:15:05 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:15:05 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:15:05 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:15:13 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:15:13 Europe/Berlin] AJAX Request - Action: unlike, User: 102, POST: Array
+(
+    [post_id] => 103
+)
+
+[02-Apr-2026 20:15:20 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:15:20 Europe/Berlin] AJAX Request - Action: unlike, User: 102, POST: Array
+(
+    [post_id] => 103
+)
+
+[02-Apr-2026 20:15:22 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:15:22 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:15:22 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:15:22 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:15:22 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:15:22 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:15:22 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:15:22 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:15:22 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:15:22 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:15:22 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:15:22 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:15:22 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:15:22 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:15:22 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:15:22 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:15:22 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:15:22 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:15:22 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:15:22 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:15:22 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:15:22 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:15:22 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:15:22 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:15:22 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:15:22 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:15:22 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:15:22 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:15:22 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:15:22 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:15:22 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:15:23 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:15:23 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:15:23 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:15:23 Europe/Berlin] AJAX Request - Action: check_like, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:15:23 Europe/Berlin] AJAX Request - Action: check_save, User: 102, POST: Array
+(
+)
+
+[02-Apr-2026 20:15:25 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:15:25 Europe/Berlin] AJAX Request - Action: unlike, User: 102, POST: Array
+(
+    [post_id] => 103
+)
+
+[02-Apr-2026 20:15:26 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:15:26 Europe/Berlin] AJAX Request - Action: unlike, User: 102, POST: Array
+(
+    [post_id] => 103
+)
+
+[02-Apr-2026 20:15:26 Europe/Berlin] === AJAX HANDLER STARTED ===
+[02-Apr-2026 20:15:26 Europe/Berlin] AJAX Request - Action: unlike, User: 102, POST: Array
+(
+    [post_id] => 103
+)
+
